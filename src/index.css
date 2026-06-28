@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Mukta', 'Poppins', sans-serif;
+  background-color: #FBF6EC;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: #170C0B;
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.lang-hi {
+  font-family: 'Tiro Devanagari Hindi', 'Mukta', serif;
+}
+
+::selection {
+  background-color: #D4A017;
+  color: #2A0A0E;
+}
+
+.diya-divider {
+  background-image: linear-gradient(90deg, transparent, #D4A017, transparent);
+  height: 1px;
+}
+
+.kolam-border {
+  border-image: repeating-linear-gradient(45deg, #D4A017 0 6px, transparent 6px 12px) 4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
